@@ -1,0 +1,99 @@
+body{
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin: auto;
+}
+ol li{
+    display: flex;
+    column-gap: 50px;
+    margin: 80px 0 0 300px;
+    text-align: center;
+}
+.square{
+    background-color: darkcyan;
+    width: 100px;
+    height: 100px;
+    animation: square 5s infinite;
+}
+@keyframes square{
+    0%{
+      transform: matrix(1,-0.3,0,1,0,0);  
+    }
+    100%{
+        transform: matrix(1,0.5,0,1,0,0);
+    }
+}
+.square1{
+    background-color: darkgrey;
+    width: 100px;
+    height: 100px;
+    animation: square1 5s infinite;
+}
+@keyframes square1{
+    0%{
+        transform: matrix(-1,-0.7,0,1,0,0);
+    }
+    100%{
+        transform: matrix(-1,0.5,0,1,0,0);
+    }
+}
+.square2{
+    background-color: blue;
+    width: 100px;
+    height: 100px; 
+    animation: example 2s infinite;
+}
+@keyframes example{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+.square3a{
+    background-color: darkcyan;
+    width: 100px;
+    height: 100px;
+    animation: boxa 2s infinite;
+}
+@keyframes boxa{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1,0.5);
+    }
+}
+.square3b{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    animation: boxb 2s infinite;
+}
+@keyframes boxb{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(0.5,1);
+    }
+}
+.square3c{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    animation: boxc 2s infinite;
+}
+@keyframes boxc{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(-1turn);
+    }
+}
